@@ -1,0 +1,9 @@
+# Local state files
+ClipboardHistory.db*
+RecentProjects.db
+Managed/Cache/
+Managed/LocalIndex.plist
+Session/
+
+# TextMate's internal Ruby
+Ruby/
