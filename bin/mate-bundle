@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+bl install \
+    "Apache" \
+    "AppleScript" \
+    "Bundle Development" \
+    "Bundle Support" \
+    "C#" \
+    "C" \
+    "CMake" \
+    "CSS" \
+    "Diff" \
+    "Git" \
+    "HTML" \
+    "Hyperlink Helper" \
+    "JSON" \
+    "Java" \
+    "JavaDoc" \
+    "JavaScript jQuery" \
+    "JavaScript" \
+    "Mail" \
+    "Make" \
+    "Markdown (Front Matter)" \
+    "Markdown (GitHub)" \
+    "Markdown" \
+    "Math" \
+    "Mercurial" \
+    "Objective-C" \
+    "PHP" \
+    "Perl" \
+    "Property List" \
+    "Python" \
+    "Ruby" \
+    "SCM Diff Gutter" \
+    "SCM" \
+    "SQL" \
+    "Shell Script" \
+    "Source" \
+    "Subversion" \
+    "Swift" \
+    "TODO" \
+    "Text" \
+    "TextMate" \
+    "Themes" \
+    "XML" \
+    "YAML"
+
+git clone \
+    git@github.com:SteveMarshall/Steves-Bundle.tmbundle.git \
+    "Pristine Copy/Bundles/Steves-Bundle.tmbundle"
+git clone \
+    git@github.com:mads-hartmann/Whitespace.tmbundle.git \
+    "Pristine Copy/Bundles/Whitespace.tmbundle"

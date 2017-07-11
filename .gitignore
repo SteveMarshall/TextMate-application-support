@@ -1,8 +1,8 @@
 # Local state files
 ClipboardHistory.db*
 RecentProjects.db
-Managed/Cache/
-Managed/LocalIndex.plist
+Managed/
+Pristine Copy/
 Session/
 
 # TextMate's internal Ruby
