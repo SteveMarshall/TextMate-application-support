@@ -45,9 +45,18 @@ bl install \
     "XML" \
     "YAML"
 
-git clone \
-    git@github.com:SteveMarshall/Steves-Bundle.tmbundle.git \
-    "Pristine Copy/Bundles/Steves-Bundle.tmbundle"
-git clone \
-    git@github.com:mads-hartmann/Whitespace.tmbundle.git \
-    "Pristine Copy/Bundles/Whitespace.tmbundle"
+bundles=(
+    SteveMarshall/Steves-Bundle.tmbundle
+    mads-hartmann/Whitespace.tmbundle
+)
+for bundle in ${bundles[@]}; do
+    echo $bundle
+    bundle_path="Pristine Copy/Bundles/$(basename $bundle)"
+    if [[ -d $bundle_path ]]; then
+        pushd "$bundle_path" > /dev/null
+        git pull
+        popd > /dev/null
+    else
+        git clone git@github.com:$bundle $bundle_path
+    fi
+done
